@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-smooth-scrolling",
+  "version": "1.0.0",
+  "description": "Vanilla smooth scrolling",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "document-offset": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-latest": "^6.16.0",
+    "gulp": "*",
+    "gulp-util": "^3.0.7",
+    "webpack": "*"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>vanillaSmoothScrolling Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .containers {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .useless-content {
+        text-align: center;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="firstContainer" class="containers">
+      <button id="scrollButton" href="#secondContainer" data-href="secondContainer">Scroll!</button>
+      <button id="scrollButton1" href="#thirdContainer" data-href="thirdContainer">Scroll to 2</button>
+      <button id="scrollButton2" href="#fourthContainer" data-href="fourthContainer">Scroll to 3</button>
+      <button id="scrollButton3" href="#fifthContainer" data-href="fifthContainer">Scroll to 4</button>
+    </div>
+
+    <div id="secondContainer" class="containers">
+      <p class="useless-content">You scrolled 1!</p>
+    </div>
+
+    <div id="thirdContainer" class="containers">
+      <p class="useless-content">You scrolled 2!</p>
+    </div>
+
+    <div id="fourthContainer" class="containers">
+      <p class="useless-content">You scrolled 3!</p>
+    </div>
+
+    <div id="fifthContainer" class="containers">
+      <p class="useless-content">You scrolled 4!</p>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
