@@ -42,9 +42,9 @@ function smoothScrolling(buttons) {
     allLinks = [buttons];
   }
 
-  allLinks.forEach((button) => {
-    scrollToAlias(button.id, button.dataset.href);
-  });
+  for (var i = 0; i < allLinks.length; i++) {
+    scrollToAlias(allLinks[i].id, allLinks[i].dataset.href);
+  }
 }
 
 module.exports = smoothScrolling;
